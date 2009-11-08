@@ -6,7 +6,7 @@ require 'spec/rake/spectask'
  
 GEM = 'pushesus'
 GEM_NAME = 'pushesus'
-GEM_VERSION = '0.0.1'
+GEM_VERSION = '0.0.2'
 AUTHORS = ['James Pozdena']
 EMAIL = "jpoz@jpoz.net"
 HOMEPAGE = "http://github.com/jpoz/pushesus"
@@ -25,6 +25,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = HOMEPAGE
   s.require_path = 'lib'
   s.autorequire = GEM
+  s.add_dependency('httparty', '>= 0.4.5')
   s.files = %w(MIT-LICENSE README.textile Rakefile) + Dir.glob("{lib}/**/*")
 end
  

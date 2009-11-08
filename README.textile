@@ -1,3 +1,20 @@
 h1. PushesUs
 
-http://pushes.us
+http://www.pushes.us
+
+h2. Usage
+
+Easy as pie:
+ 
+<pre>
+  <code>
+    network_key = 'w7h3o4s3y5o4u7r3d4a4d6d7y'
+    # Your network key from pushes.us
+  
+    device_identity = '2123zannzabar'
+    # iPhone identity from the PushesUs iPhone app.
+  
+    PushesUs::Notification.send(network_key,device_identity,'Well hello iPhone!')
+    # away it goes! It's that easy!
+  </code>
+</pre>
